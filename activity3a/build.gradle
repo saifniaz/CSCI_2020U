@@ -1,0 +1,14 @@
+apply plugin: 'java'
+
+sourceCompatibility = 1.7
+version = '1.0.1' 
+jar{
+	manifest {
+		attributes 'Main-Class': 'gradleDemo.gradleDemo',
+		'Implementation-Title': 'Gradle Demo v1.0.1',
+		'Implementation-Version': version
+	}
+}
+dependencies{
+	compile group: 'common-validator', name: 'commons..'
+}
